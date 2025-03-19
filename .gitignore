@@ -17,10 +17,6 @@
 # Dependency directories (remove the comment belosw to include it)
 # vendor/
 ./db/
-./grafana/
-.internal/
+./bin/
 
-# Go workspace file
-go.work
-go.work.sum
 
