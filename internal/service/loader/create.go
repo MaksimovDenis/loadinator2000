@@ -77,6 +77,7 @@ func storeFile(fileName, filePath string, data []byte) (string, error) {
 		if err != nil {
 			return "", fmt.Errorf("не удалось получить домашнюю директорию: %v", err)
 		}
+
 		filePath = filepath.Join(homeDir, filePath[1:])
 	}
 

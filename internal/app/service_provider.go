@@ -72,17 +72,17 @@ func (srv *serviceProvider) PGConfig() config.PGConfig {
 	return srv.pgConfig
 }
 
-func (s *serviceProvider) GRPCConfig() config.GRPCConfig {
-	if s.grpcConfig == nil {
+func (srv *serviceProvider) GRPCConfig() config.GRPCConfig {
+	if srv.grpcConfig == nil {
 		cfg, err := config.NewGRPCConfig()
 		if err != nil {
 			log.Fatal().Err(err).Msg("failed to get server config")
 		}
 
-		s.grpcConfig = cfg
+		srv.grpcConfig = cfg
 	}
 
-	return s.grpcConfig
+	return srv.grpcConfig
 }
 
 func (srv *serviceProvider) DBClient(ctx context.Context) db.Client {

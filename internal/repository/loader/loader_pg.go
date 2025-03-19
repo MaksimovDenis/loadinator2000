@@ -46,6 +46,7 @@ func (rep *repo) Create(ctx context.Context, fileName string, filePath string) (
 	}
 
 	var name string
+
 	err = rep.db.DB().QueryRowContext(ctx, queryStruct, args...).Scan(&name)
 	if err != nil {
 		rep.log.Error().Err(err).Msg("failed to create file")

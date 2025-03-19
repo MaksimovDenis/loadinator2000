@@ -5,17 +5,10 @@ import (
 
 	"github.com/MaksimovDenis/loadinator2000/internal/models"
 	desc "github.com/MaksimovDenis/loadinator2000/pkg/loader_v1"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/metadata"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 func (hdl *Implementation) List(ctx context.Context, req *desc.ListRequest) (*desc.ListResponse, error) {
-	md := metadata.Pairs(
-		"Content-Type", "application/grpc",
-	)
-	grpc.SendHeader(ctx, md)
-
 	files, err := hdl.loaderSecrvice.List(ctx, req.Limit, req.Offset)
 	if err != nil {
 		hdl.log.Error().Err(err).Msg("failed to get files")
