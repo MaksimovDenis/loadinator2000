@@ -1,0 +1,72 @@
+{"level":"warn","module":"repository","username":"user1","time":"2025-02-20T22:15:24+03:00","message":"GetUser: user not found"}
+{"level":"info","module":"service","time":"2025-02-20T22:15:24+03:00","message":"user user1 has been created"}
+{"level":"info","module":"api","time":"2025-02-20T22:16:09+03:00","message":"userId 1 bought book"}
+{"level":"info","module":"api","time":"2025-02-24T20:10:58+03:00","message":"userId 1 bought book"}
+{"level":"error","module":"repository","error":"no rows in result set","time":"2025-02-24T20:11:06+03:00","message":"UpdateBalanceForPurchase: failed to update user data"}
+{"level":"info","module":"api","time":"2025-02-24T20:11:12+03:00","message":"userId 1 bought pen"}
+{"level":"warn","module":"repository","username":"user2","time":"2025-02-24T20:11:25+03:00","message":"GetUser: user not found"}
+{"level":"info","module":"service","time":"2025-02-24T20:11:25+03:00","message":"user user2 has been created"}
+{"level":"error","module":"service","error":"crypto/bcrypt: hashedPassword is not the hash of the given password","time":"2025-02-24T20:11:32+03:00","message":"password mismatch"}
+{"level":"error","module":"api","error":"неверный логин или пароль","time":"2025-02-24T20:11:32+03:00","message":"failed to auth user"}
+{"level":"info","module":"api","time":"2025-02-24T20:11:39+03:00","message":"userId 2 bought pen"}
+{"level":"info","module":"api","time":"2025-02-24T20:11:41+03:00","message":"userId 2 bought pen"}
+{"level":"info","module":"api","time":"2025-02-24T20:11:42+03:00","message":"userId 2 bought pen"}
+{"level":"info","module":"api","time":"2025-02-24T20:11:47+03:00","message":"userId 2 bought t-shirt"}
+{"level":"info","module":"api","time":"2025-02-24T20:12:04+03:00","message":"user user2 sent 100 coins to user user1"}
+{"level":"info","module":"api","time":"2025-02-24T20:12:05+03:00","message":"user user2 sent 100 coins to user user1"}
+{"level":"error","module":"service","time":"2025-02-24T20:12:10+03:00","message":"not enough coins for transaction"}
+{"level":"info","module":"api","time":"2025-02-24T20:12:19+03:00","message":"user user2 get info"}
+{"level":"info","module":"api","time":"2025-02-24T20:12:59+03:00","message":"user user1 get info"}
+{"level":"info","module":"api","time":"2025-02-24T20:13:10+03:00","message":"user user1 sent 1000 coins to user user2"}
+{"level":"info","module":"api","time":"2025-02-24T20:13:12+03:00","message":"user user1 get info"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T19:55:02+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"failed executing code inside transaction: не удалось сделать запрос к БД","time":"2025-03-19T19:55:02+03:00","message":"failed to add file file1"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:03:52+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"failed executing code inside transaction: не удалось сделать запрос к БД","time":"2025-03-19T20:03:52+03:00","message":"failed to add file file1"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:05:47+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"failed executing code inside transaction: не удалось сделать запрос к БД","time":"2025-03-19T20:05:47+03:00","message":"failed to add file file1"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:13:25+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"ERROR: INSERT has more target columns than expressions (SQLSTATE 42601)","time":"2025-03-19T20:13:25+03:00","message":"failed to create file"}
+{"level":"error","error":"failed executing code inside transaction: ERROR: INSERT has more target columns than expressions (SQLSTATE 42601)","time":"2025-03-19T20:13:25+03:00","message":"failed to add file file1"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:14:24+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"scanning: scanning: doing scan: scanFn: scany: column: 'filename': no corresponding field found, or it's unexported in models.FileInfo","time":"2025-03-19T20:15:04+03:00","message":"get files list: failed to scan rows"}
+{"level":"error","error":"scanning: scanning: doing scan: scanFn: scany: column: 'filename': no corresponding field found, or it's unexported in models.FileInfo","time":"2025-03-19T20:15:04+03:00","message":"failed to get files"}
+{"level":"error","error":"scanning: scanning: doing scan: scanFn: scany: column: 'id': no corresponding field found, or it's unexported in models.FileInfo","time":"2025-03-19T20:16:22+03:00","message":"get files list: failed to scan rows"}
+{"level":"error","error":"scanning: scanning: doing scan: scanFn: scany: column: 'id': no corresponding field found, or it's unexported in models.FileInfo","time":"2025-03-19T20:16:22+03:00","message":"failed to get files"}
+{"level":"error","error":"scanning: scanning: doing scan: scanFn: scany: column: 'filename': no corresponding field found, or it's unexported in models.FileInfo","time":"2025-03-19T20:16:57+03:00","message":"get files list: failed to scan rows"}
+{"level":"error","error":"scanning: scanning: doing scan: scanFn: scany: column: 'filename': no corresponding field found, or it's unexported in models.FileInfo","time":"2025-03-19T20:16:57+03:00","message":"failed to get files"}
+{"level":"error","error":"failed executing code inside transaction: файл с таким именем уже существует","time":"2025-03-19T20:30:49+03:00","message":"failed to add file file1"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:31:02+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"failed executing code inside transaction: файл с таким именем уже существует","time":"2025-03-19T20:31:05+03:00","message":"failed to add file dune"}
+{"level":"error","error":"заполните поле имя файла","time":"2025-03-19T20:31:10+03:00","message":"failed to add file "}
+{"level":"error","error":"заполните поле путь файла","time":"2025-03-19T20:31:36+03:00","message":"failed to add file test"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:31:41+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"failed executing code inside transaction: не удалось создать файл test","time":"2025-03-19T20:31:41+03:00","message":"failed to add file test"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:31:53+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"failed executing code inside transaction: не удалось создать файл test","time":"2025-03-19T20:31:53+03:00","message":"failed to add file test"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:32:16+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"failed executing code inside transaction: не удалось создать файл test2","time":"2025-03-19T20:32:16+03:00","message":"failed to add file test2"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:32:30+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:33:01+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:16+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:17+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:18+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:18+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:18+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:18+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:19+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:19+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:19+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:19+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:42:20+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:43:09+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:43:09+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:43:10+03:00","message":"failed to get file test2"}
+{"level":"error","error":"не удалось открыть файл .//test2 open .//test2: no such file or directory","time":"2025-03-19T20:43:11+03:00","message":"failed to get file test2"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:51:10+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:51:24+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:56:20+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"failed executing code inside transaction: файл с таким именем уже существует","time":"2025-03-19T20:56:53+03:00","message":"failed to add file duneImage"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:57:11+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:57:20+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T20:57:20+03:00","message":"failed to get file file1"}

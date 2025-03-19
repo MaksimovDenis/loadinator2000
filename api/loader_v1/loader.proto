@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package note_v1;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/MaksimovDenis/smallDownloader/pkg/loader_v1;loader_v1";
+
+service LoaderV1 {
+    rpc Create(CreateRequest) returns (CreateResponse);
+    rpc List(ListRequest) returns (ListResponse);
+    rpc Get(GetRequest) returns (GetResponse);
+}
+
+message CreateRequest {
+    string filename = 1;
+    string file_path = 2;
+    bytes data = 3;
+}
+
+message CreateResponse {
+    string message = 1;
+}
+
+message ListRequest {
+    int64 limit = 1;
+    int64 offset = 2;
+}
+
+message ListResponse {
+    repeated FilesInfo files = 1;
+}
+
+message FilesInfo {
+    string filename = 1;
+    string file_path = 2;
+    google.protobuf.Timestamp created_at = 3;
+    google.protobuf.Timestamp updated_at = 4;
+}
+
+message GetRequest {
+    string filename = 1;
+}
+
+message GetResponse {
+    bytes data = 1;
+}

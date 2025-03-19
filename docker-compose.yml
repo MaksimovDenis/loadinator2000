@@ -1,0 +1,25 @@
+services:
+  app:
+    build: ./
+    restart: always
+    ports:
+      - 50051:50051
+    depends_on:
+      - db
+    environment:
+      GRPC_HOST: 0.0.0.0
+      GRPC_PORT: 50051
+      PG_DSN: postgres://admin:admin@db:5432/tages?sslmode=disable
+
+
+  db:
+    restart: always
+    image: postgres:latest
+    volumes:
+      - ./db/init:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: tages
+    ports:
+      - 5432:5432
