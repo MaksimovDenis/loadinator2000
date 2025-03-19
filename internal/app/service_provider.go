@@ -135,7 +135,7 @@ func (srv *serviceProvider) LoaderService(ctx context.Context) service.LoaderSer
 	return srv.loaderService
 }
 
-func (srv *serviceProvider) NoteImpl(ctx context.Context) *loader.Implementation {
+func (srv *serviceProvider) LoadImpl(ctx context.Context) *loader.Implementation {
 	if srv.loaderImpl == nil {
 		srv.loaderImpl = loader.NewImplementation(srv.LoaderService(ctx), srv.log)
 	}

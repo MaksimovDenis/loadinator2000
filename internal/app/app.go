@@ -75,7 +75,7 @@ func (app *App) initGRPCServer(ctx context.Context) error {
 
 	reflection.Register(app.grpcServer)
 
-	desc.RegisterLoaderV1Server(app.grpcServer, app.serviceProvider.NoteImpl(ctx))
+	desc.RegisterLoaderV1Server(app.grpcServer, app.serviceProvider.LoadImpl(ctx))
 
 	return nil
 }

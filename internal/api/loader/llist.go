@@ -39,6 +39,7 @@ func convertModelFileToListResp(
 		Filename:  val.FileName,
 		FilePath:  val.FilePath,
 		CreatedAt: timestamppb.New(val.CreatedAt),
+		UpdatedAt: timestamppb.New(val.UpdatedAt.Time),
 	}
 
 	return &res

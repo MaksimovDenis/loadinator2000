@@ -26,6 +26,9 @@ generate-loader-api:
 up:
 	docker compose up --build
 
+start-server:
+	go run .
+
 down:
 	docker compose down
 

@@ -70,3 +70,8 @@
 {"level":"error","error":"no rows in result set","time":"2025-03-19T20:57:11+03:00","message":"get file: failed to scan row"}
 {"level":"error","error":"no rows in result set","time":"2025-03-19T20:57:20+03:00","message":"get file: failed to scan row"}
 {"level":"error","error":"no rows in result set","time":"2025-03-19T20:57:20+03:00","message":"failed to get file file1"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T22:40:25+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T22:41:01+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T22:45:52+03:00","message":"get file: failed to scan row"}
+{"level":"error","error":"no rows in result set","time":"2025-03-19T22:45:52+03:00","message":"failed to get file duneImage1"}
+{"level":"error","error":"заполните поле имя файла","time":"2025-03-19T22:46:12+03:00","message":"failed to add file "}

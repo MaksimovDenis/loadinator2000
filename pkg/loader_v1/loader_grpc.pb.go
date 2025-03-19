@@ -37,7 +37,7 @@ func NewLoaderV1Client(cc grpc.ClientConnInterface) LoaderV1Client {
 
 func (c *loaderV1Client) Create(ctx context.Context, in *CreateRequest, opts ...grpc.CallOption) (*CreateResponse, error) {
 	out := new(CreateResponse)
-	err := c.cc.Invoke(ctx, "/note_v1.LoaderV1/Create", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/loader_v1.LoaderV1/Create", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -46,7 +46,7 @@ func (c *loaderV1Client) Create(ctx context.Context, in *CreateRequest, opts ...
 
 func (c *loaderV1Client) List(ctx context.Context, in *ListRequest, opts ...grpc.CallOption) (*ListResponse, error) {
 	out := new(ListResponse)
-	err := c.cc.Invoke(ctx, "/note_v1.LoaderV1/List", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/loader_v1.LoaderV1/List", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -55,7 +55,7 @@ func (c *loaderV1Client) List(ctx context.Context, in *ListRequest, opts ...grpc
 
 func (c *loaderV1Client) Get(ctx context.Context, in *GetRequest, opts ...grpc.CallOption) (*GetResponse, error) {
 	out := new(GetResponse)
-	err := c.cc.Invoke(ctx, "/note_v1.LoaderV1/Get", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/loader_v1.LoaderV1/Get", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -108,7 +108,7 @@ func _LoaderV1_Create_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/note_v1.LoaderV1/Create",
+		FullMethod: "/loader_v1.LoaderV1/Create",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(LoaderV1Server).Create(ctx, req.(*CreateRequest))
@@ -126,7 +126,7 @@ func _LoaderV1_List_Handler(srv interface{}, ctx context.Context, dec func(inter
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/note_v1.LoaderV1/List",
+		FullMethod: "/loader_v1.LoaderV1/List",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(LoaderV1Server).List(ctx, req.(*ListRequest))
@@ -144,7 +144,7 @@ func _LoaderV1_Get_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/note_v1.LoaderV1/Get",
+		FullMethod: "/loader_v1.LoaderV1/Get",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(LoaderV1Server).Get(ctx, req.(*GetRequest))
@@ -156,7 +156,7 @@ func _LoaderV1_Get_Handler(srv interface{}, ctx context.Context, dec func(interf
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var LoaderV1_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "note_v1.LoaderV1",
+	ServiceName: "loader_v1.LoaderV1",
 	HandlerType: (*LoaderV1Server)(nil),
 	Methods: []grpc.MethodDesc{
 		{
