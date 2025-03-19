@@ -14,9 +14,12 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-# Dependency directories (remove the comment belosw to include it)
+# Dependency directories (remove the comment below to include it)
 # vendor/
-./db/
-./bin/
 
+# Go workspace file
+go.work
+go.work.sum
 
+# env file
+.env
